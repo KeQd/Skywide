@@ -1,0 +1,61 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Skywide.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Dodaj us³ugê MVC
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login"; // Œcie¿ka do logowania
+        options.AccessDeniedPath = "/AccessDenied"; // Œcie¿ka dostêpu, jeœli u¿ytkownik nie ma uprawnieñ
+    });
+
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+// Sprawdzenie œrodowiska
+if (app.Environment.IsDevelopment()) // zamiast app.Environment
+{
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+
+// Ustawienia routingu
+app.MapControllerRoute(
+    name: "login",
+    pattern: "{controller=Login}/{action=Login}/{id?}");
+
+app.MapControllerRoute(
+    name: "login_post",
+    pattern: "{controller=Login}/{action=LoginIntoHome}");
+
+app.MapControllerRoute(
+    name: "register",
+    pattern: "{controller=Register}/{action=Register}/{id?}");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+// Uruchom aplikacjê
+app.Run();

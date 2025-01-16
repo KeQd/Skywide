@@ -1,0 +1,50 @@
+﻿@page
+@model Skywide.Models.LoginViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/css/login_register.css" />
+</head>
+<body>
+	<div class="whole-page">
+
+		<div class="page-title d-flex justify-content-center align-items-center w-100">
+			<h1>Skywide.com</h1>
+		</div>
+
+		<div class="page-main">
+			<div class="login-form ">
+				<h2>Login</h2>
+				<form method="post" asp-action="LoginIntoHome">
+					<div style ="margin-top:20px;">
+						<label class="labels" for="Username">Username :</label>
+						<input type="text" id="Username" name="Username" value="@Model.Username" />
+						<br /><span style="font-size:1.6em; color:red; font-weight:600;" asp-validation-for="Username"></span>
+					</div>
+					<div style="margin-top:20px;">
+						<label class="labels" for="Password">Password :</label>
+						<input type="password" id="Password" name="PasswordHash" value="@Model.PasswordHash" />
+						<br /><span style="font-size:1.6em; color:red; font-weight:600;" asp-validation-for="PasswordHash"></span>
+					</div>
+					<button style="margin-bottom:10px;" class="buttons" type="submit">Confirm</button>
+					<br />  
+					@if (ViewData["GeneralError"] != null)
+					{
+						<span style="font-size:1.6em; color:red; font-weight:600;">
+							@ViewData["GeneralError"]
+						</span>
+					}
+				</form>
+				<a id="register" class="d-flex justify-content-center" href="~/Register/Register">Creat new account</a>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
