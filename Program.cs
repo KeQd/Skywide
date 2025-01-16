@@ -52,9 +52,14 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "register",
     pattern: "{controller=Register}/{action=Register}/{id?}");
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Index}/{action=Index}/{id?}");
+ 
+app.MapControllerRoute(
+    name: "NewPost",
+    pattern: "{controller=CreateNewPost}/{action=CreateNewPost}/{id?}");
 
 
 // Uruchom aplikacjê

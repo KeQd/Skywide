@@ -1,5 +1,4 @@
-﻿@page
-@model Skywide.Models.LoginViewModel
+﻿@model Skywide.Models.LoginViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -29,8 +28,8 @@
 					</div>
 					<div style="margin-top:20px;">
 						<label class="labels" for="Password">Password :</label>
-						<input type="password" id="Password" name="PasswordHash" value="@Model.PasswordHash" />
-						<br /><span style="font-size:1.6em; color:red; font-weight:600;" asp-validation-for="PasswordHash"></span>
+						<input type="password" id="Password" name="Password" value="@Model.Password" />
+						<br /><span style="font-size:1.6em; color:red; font-weight:600;" asp-validation-for="Password"></span>
 					</div>
 					<button style="margin-bottom:10px;" class="buttons" type="submit">Confirm</button>
 					<br />  

@@ -159,3 +159,4 @@ C:\Users\KeQd\source\repos\Skywide\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.P
 C:\Users\KeQd\source\repos\Skywide\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\KeQd\source\repos\Skywide\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\KeQd\source\repos\Skywide\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\KeQd\source\repos\Skywide\obj\Debug\net8.0\Skywide.sourcelink.json

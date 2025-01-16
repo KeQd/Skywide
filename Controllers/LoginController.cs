@@ -19,8 +19,8 @@ namespace Skywide.Controllers
         {
             var model = new LoginViewModel
             {
-                Username = "",
-                PasswordHash = "",
+                Username = "admin",
+                Password = "admin"
             };
 
             return View(model);
@@ -36,9 +36,9 @@ namespace Skywide.Controllers
             }
 
             // Walidacja hasła
-            if (string.IsNullOrEmpty(model.PasswordHash))
+            if (string.IsNullOrEmpty(model.Password))
             {
-                ModelState.AddModelError("PasswordHash", "Password is required.");
+                ModelState.AddModelError("Password", "Password is required.");
             }
 
             if (!ModelState.IsValid)
@@ -50,10 +50,10 @@ namespace Skywide.Controllers
                 .FirstOrDefaultAsync(u => u.Username == model.Username);
 
             // Walidacja podanych danych
-            if (existingUser == null || !BCrypt.Net.BCrypt.Verify(model.PasswordHash, existingUser.PasswordHash))
+            if (existingUser == null || !BCrypt.Net.BCrypt.Verify(model.Password, existingUser.PasswordHash))
             {
                 ViewData["GeneralError"] = "Username or Password is incorrect";
-                return View(model);
+                return View("Login", model);
             }
 
             var cookieOptions = new CookieOptions
@@ -68,7 +68,7 @@ namespace Skywide.Controllers
             Response.Cookies.Append("Username", existingUser.Username, cookieOptions);
             Response.Cookies.Append("UserId", existingUser.UserID.ToString(), cookieOptions);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Index");
         }
     }
 }

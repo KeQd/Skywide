@@ -1,5 +1,4 @@
-﻿@page
-@model Skywide.Views.Index.IndexModel
+﻿@model Skywide.Models.IndexViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -13,14 +12,44 @@
 </head>
 <body>
 	<div class="whole-page">
-
-		<div class="page-title d-flex justify-content-center align-items-center w-100">
-			<h1>Skywide.com</h1>
+		<div class="toolbar">
+			<div class="toolbar-left">
+				<a class="create-post" href="~/CreateNewPost/CreateNewPost">Create new post</a>
+			</div>
+			<div class="toolbar-mid">
+				<form id="search-form" method="get" asp-action="Index" asp-controller="Index">
+					<input type="text" class="search" id="searchQuery" name="searchQuery" placeholder="Search by title..." value="@ViewData["searchQuery"]" />
+				</form>
+			</div>
+			<div class="toolbar-right">
+				<a class="user-profile" href="~/Account/Account">@Model.Username</a>
+			</div>
 		</div>
-
 		<div class="page-main">
+			<div style="height:100%; width:20%"></div>
+			<div class="user-wall">
+				<div class="wall-content">
+					fake
+				</div>
+			</div>
+			<div class="threads">
+				<div class="explore-threads"></div>
+			</div>
 		</div>
-
 	</div>
+	<script>
+		// Funkcja wywoływana przy naciśnięciu klawisza Enter
+		document.addEventListener("DOMContentLoaded", function() {
+			const searchInput = document.getElementById("searchQuery");
+
+			// Reakcja na naciśnięcie Enter
+			searchInput.addEventListener("keydown", function(event) {
+				if (event.key === "Enter") {
+					event.preventDefault();  // Zapobieganie domyślnej akcji formularza
+					document.getElementById("search-form").submit();  // Zatwierdzenie formularza
+				}
+			});
+		});
+	</script>
 </body>
 </html>
