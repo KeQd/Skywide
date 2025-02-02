@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ED4Q1bD8W1lA6DeTUqkWNQaJN/F5cOLQOBATEZTYAT8=",
+  "Hash": "I0FerzTzKogLYv9gPYGWxd5UDE63TXA4eR4m/p2Xsxw=",
   "Source": "Skywide",
   "BasePath": "_content/Skywide",
   "Mode": "Default",
@@ -1277,6 +1277,27 @@
       "OriginalItemSpec": "C:\\Users\\KeQd\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.11\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\CreateNewPost.css",
+      "SourceId": "Skywide",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\",
+      "BasePath": "_content/Skywide",
+      "RelativePath": "css/CreateNewPost#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9zzc9lmipf",
+      "Integrity": "JT4gvEAzr00Bv8sdILHNwa43xFTRaSIBviCyl98/F+Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CreateNewPost.css"
+    },
+    {
       "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\login_register.css",
       "SourceId": "Skywide",
       "SourceType": "Discovered",
@@ -1291,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ltkoadquiq",
-      "Integrity": "l8IGBWdbvMj7/GHztMxHbNs4kShrvqHUcDy4E9Dl+9A=",
+      "Fingerprint": "o7qhaaiew2",
+      "Integrity": "DA9aeOcYxZvhRV5t4GTQngHunvVtifunZbttWn1bTw4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login_register.css"
@@ -1312,14 +1333,96 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "taxcxwsk8l",
-      "Integrity": "a8vFLDBEPSrzuWc2Wv7yWUU1yN2sMBb39LQmUGxf7K4=",
+      "Fingerprint": "c05x1c9r6e",
+      "Integrity": "ZMeYMFKTbHj+J0Ns7RPonvwYle0TCnHOYO9Kxs+wUYA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/CreateNewPost.9zzc9lmipf.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\CreateNewPost.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JT4gvEAzr00Bv8sdILHNwa43xFTRaSIBviCyl98/F+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 05:21:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9zzc9lmipf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/CreateNewPost.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JT4gvEAzr00Bv8sdILHNwa43xFTRaSIBviCyl98/F+Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/CreateNewPost.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\CreateNewPost.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JT4gvEAzr00Bv8sdILHNwa43xFTRaSIBviCyl98/F+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 05:21:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JT4gvEAzr00Bv8sdILHNwa43xFTRaSIBviCyl98/F+Q="
+        }
+      ]
+    },
     {
       "Route": "css/login_register.css",
       "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\login_register.css",
@@ -1331,7 +1434,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1467"
+          "Value": "1473"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1442,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"l8IGBWdbvMj7/GHztMxHbNs4kShrvqHUcDy4E9Dl+9A=\""
+          "Value": "\"DA9aeOcYxZvhRV5t4GTQngHunvVtifunZbttWn1bTw4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 19:26:28 GMT"
+          "Value": "Sun, 02 Feb 2025 04:35:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,12 +1456,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-l8IGBWdbvMj7/GHztMxHbNs4kShrvqHUcDy4E9Dl+9A="
+          "Value": "sha256-DA9aeOcYxZvhRV5t4GTQngHunvVtifunZbttWn1bTw4="
         }
       ]
     },
     {
-      "Route": "css/login_register.ltkoadquiq.css",
+      "Route": "css/login_register.o7qhaaiew2.css",
       "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\login_register.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1368,7 +1471,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1467"
+          "Value": "1473"
         },
         {
           "Name": "Content-Type",
@@ -1376,11 +1479,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"l8IGBWdbvMj7/GHztMxHbNs4kShrvqHUcDy4E9Dl+9A=\""
+          "Value": "\"DA9aeOcYxZvhRV5t4GTQngHunvVtifunZbttWn1bTw4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 19:26:28 GMT"
+          "Value": "Sun, 02 Feb 2025 04:35:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1390,7 +1493,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ltkoadquiq"
+          "Value": "o7qhaaiew2"
         },
         {
           "Name": "label",
@@ -1398,7 +1501,52 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-l8IGBWdbvMj7/GHztMxHbNs4kShrvqHUcDy4E9Dl+9A="
+          "Value": "sha256-DA9aeOcYxZvhRV5t4GTQngHunvVtifunZbttWn1bTw4="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.c05x1c9r6e.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZMeYMFKTbHj+J0Ns7RPonvwYle0TCnHOYO9Kxs+wUYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 04:35:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c05x1c9r6e"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZMeYMFKTbHj+J0Ns7RPonvwYle0TCnHOYO9Kxs+wUYA="
         }
       ]
     },
@@ -1413,7 +1561,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2454"
+          "Value": "2666"
         },
         {
           "Name": "Content-Type",
@@ -1421,11 +1569,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a8vFLDBEPSrzuWc2Wv7yWUU1yN2sMBb39LQmUGxf7K4=\""
+          "Value": "\"ZMeYMFKTbHj+J0Ns7RPonvwYle0TCnHOYO9Kxs+wUYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:54:19 GMT"
+          "Value": "Sun, 02 Feb 2025 04:35:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1435,52 +1583,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a8vFLDBEPSrzuWc2Wv7yWUU1yN2sMBb39LQmUGxf7K4="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.taxcxwsk8l.css",
-      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\main.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2454"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"a8vFLDBEPSrzuWc2Wv7yWUU1yN2sMBb39LQmUGxf7K4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 17:54:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "taxcxwsk8l"
-        },
-        {
-          "Name": "label",
-          "Value": "css/main.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-a8vFLDBEPSrzuWc2Wv7yWUU1yN2sMBb39LQmUGxf7K4="
+          "Value": "sha256-ZMeYMFKTbHj+J0Ns7RPonvwYle0TCnHOYO9Kxs+wUYA="
         }
       ]
     },

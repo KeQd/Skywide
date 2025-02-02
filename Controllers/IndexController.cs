@@ -32,17 +32,15 @@ namespace Skywide.Controllers
 
                 if (user != null)
                 {
+                    // Pobranie postów użytkownika
                     var posts = await _context.Posts.Where(p => p.UserID == userId).ToListAsync();
 
-                    var model = new IndexViewModel
-                    {
-                        UserId = user.UserID,
-                        Username = user.Username,
-                        Posts = posts
-                    };
+                    var model = new IndexViewModel(user.UserID, user.Username, posts);
+
                     return View(model);
                 }
             }
+
             return RedirectToAction("Login", "Login");
         }
     }

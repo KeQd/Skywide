@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\CreateNewPost.css",
+      "PackagePath": "staticwebassets\\css\\CreateNewPost.css"
+    },
+    {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\login_register.css",
       "PackagePath": "staticwebassets\\css\\login_register.css"
     },

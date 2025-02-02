@@ -16,12 +16,7 @@ public class RegisterController : Controller
     [HttpGet]
     public IActionResult Register()
     {
-        var model = new RegisterViewModel
-        {
-            Username = "",
-            Email = "",
-            PasswordHash = ""
-        };
+        var model = new RegisterViewModel("", "", "");  
 
         return View(model);
     }
@@ -73,11 +68,11 @@ public class RegisterController : Controller
 
         string passwordPattern = @"^.{5,}$";
 
-        if (string.IsNullOrEmpty(model.PasswordHash))
+        if (string.IsNullOrEmpty(model.Password))
         {
             ModelState.AddModelError("Password", "Password is required.");
         }
-        else if(!Regex.IsMatch(model.PasswordHash, passwordPattern))
+        else if(!Regex.IsMatch(model.Password, passwordPattern))
         {
             ModelState.AddModelError("Password", "Password must have atleast 5 characters");
         }
@@ -89,16 +84,14 @@ public class RegisterController : Controller
 
 
 
-        var newUser = new User
-        {
-            Username = model.Username,
-            Rights = "user",
-            Email = model.Email.ToLower(),
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.PasswordHash), 
-            DateCreated = DateTime.UtcNow
-        };
+        var newUser = new User(
+             rights: "user",
+             username: model.Username,
+             email: model.Email.ToLower(),
+             passwordHash: BCrypt.Net.BCrypt.HashPassword(model.Password)
+        );
 
-        
+
         _context.Users.Add(newUser);
         await _context.SaveChangesAsync();
 

@@ -17,11 +17,7 @@ namespace Skywide.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            var model = new LoginViewModel
-            {
-                Username = "admin",
-                Password = "admin"
-            };
+            var model = new LoginViewModel("admin", "admin");
 
             return View(model);
         }

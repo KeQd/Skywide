@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Dodaj us³ugê MVC
-
+// Dodaj us³ugê MVC i bazê danych
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Konfiguracja autentykacji
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -19,12 +19,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/AccessDenied"; // Œcie¿ka dostêpu, jeœli u¿ytkownik nie ma uprawnieñ
     });
 
+// Us³ugi MVC
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 // Sprawdzenie œrodowiska
-if (app.Environment.IsDevelopment()) // zamiast app.Environment
+if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
@@ -37,10 +38,12 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+// Autentykacja i autoryzacja
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Ustawienia routingu
+// Mapowanie routingu
 app.MapControllerRoute(
     name: "login",
     pattern: "{controller=Login}/{action=Login}/{id?}");
@@ -56,11 +59,10 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Index}/{action=Index}/{id?}");
- 
+
 app.MapControllerRoute(
     name: "NewPost",
     pattern: "{controller=CreateNewPost}/{action=CreateNewPost}/{id?}");
-
 
 // Uruchom aplikacjê
 app.Run();

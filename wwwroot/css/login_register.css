@@ -9,7 +9,7 @@
 
 .page-title {
     background-color: rgb(255,255,255);
-    height: 7vh;
+    min-height: 40px;
 }
     .page-title h1 {
         font-size: 2.5em;
@@ -22,7 +22,7 @@
     }
 
 .page-main {
-    height: calc(100vh - 7vh);
+    height: calc(100vh - 40px);
     background-color: rgb( 131, 162, 168 );
     padding-top: 60px;
     display: flex;

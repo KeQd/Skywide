@@ -1,4 +1,42 @@
-﻿@page
-@model Skywide.Views.CreateNewPost.CreateNewPostModel
-@{
-}
+﻿@model Skywide.Models.CreateNewPostViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Post</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="~/css/CreateNewPost.css" />
+</head>
+<body>
+	<div class="whole-page">
+		<div class="page-title">
+			<h1>Skywide.com</h1>
+		</div>
+		<div class="page-main">
+			<div class="editor">
+				<form method="post" asp-action="NewPost">
+					<div style="height:70px">
+						<label for="Category">Pick category :</label>
+						<input id="Category" type="text" name="Category" class="editor-field" style="width:100%" placeholder="Enter new or choose category" />
+					</div>
+					<div style="height:70px">
+						<label class="labels" for="Titl">Title :</label>
+						<input type="text" id="Title" name="Title" class="editor-field" style="width:100%;font-weight:bold;" />
+					</div>
+					<div class="editor-divs editor-main-text" style="height:400px">
+						<label class="labels" for="Content">Content :</label>
+						<textarea name="Content" id="Content" class="editor-field"></textarea>
+					</div>
+					<div>
+						<button type="submit">Add new post</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
