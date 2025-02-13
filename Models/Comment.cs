@@ -1,40 +1,21 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
-namespace Skywide.Models
+namespace Skywide.Models;
+
+public partial class Comment
 {
-    public class Comment
-    {
-        public int CommentID { get; set; }
+    public int CommentID { get; set; }
 
-        // Klucz obcy do posta
-        [ForeignKey("Post")]
-        public int PostId { get; set; }
+    public int? PostID { get; set; }
 
-        // Klucz obcy do użytkownika
-        [ForeignKey("User")]
-        public int UserId { get; set; }
+    public int? UserID { get; set; }
 
-        // Treść komentarza
-        public string Content { get; set; } = string.Empty;
+    public string Content { get; set; } = null!;
 
-        // Data utworzenia komentarza
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+    public DateTime? DateCreated { get; set; }
 
-        // Nawigacja do posta
-        public Post Post { get; set; } = new Post();
+    public virtual Post? Post { get; set; }
 
-        // Nawigacja do użytkownika
-        public User User { get; set; } = new User();
-
-        // Konstruktor
-        public Comment() { }
-
-        public Comment(int postId, int userId, string content)
-        {
-            PostId = postId;
-            UserId = userId;
-            Content = content;
-        }
-    }
+    public virtual User? User { get; set; }
 }

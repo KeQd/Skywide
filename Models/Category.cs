@@ -1,19 +1,29 @@
-﻿namespace Skywide.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace Skywide.Models;
+
+public partial class Category
 {
-    public class Category
+    public int CategoryID { get; set; }
+
+    public string Name { get; set; } = null!;
+
+    public string Description { get; set; }
+
+    public DateTime DateCreated { get; set; } = DateTime.UtcNow;
+
+    public string Slug { get; set; }
+
+    public int UserID { get; set; }
+
+    public virtual ICollection<Post> Posts { get; set; } = new List<Post>();
+
+    public Category(string name, string description, string slug, int userID)
     {
-        public int CategoryId { get; set; }
-        public string Name { get; set; }  
-        public string Description { get; set; }  
-        public DateTime DateCreated { get; set; }
-        public string Slug { get; set; }
-
-        public Category()
-        {
-            Name = string.Empty;
-            Description = string.Empty;
-            Slug = string.Empty;
-        }
+        Name = name;
+        Description = description;
+        Slug = slug;
+        UserID = userID;
     }
-
 }

@@ -62,7 +62,7 @@ namespace Skywide.Controllers
 
             // Zapisz dane użytkownika w ciasteczku
             Response.Cookies.Append("Username", existingUser.Username, cookieOptions);
-            Response.Cookies.Append("UserId", existingUser.UserID.ToString(), cookieOptions);
+            Response.Cookies.Append("UserID", existingUser.UserID.ToString(), cookieOptions);
 
             return RedirectToAction("Index", "Index");
         }

@@ -1,42 +1,36 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
-namespace Skywide.Models
+namespace Skywide.Models;
+
+public partial class Post
 {
-    public class Post
+    public int PostID { get; set; }
+
+    public int UserID { get; set; }
+
+    public string Title { get; set; } = null!;
+
+    public string Content { get; set; } = null!;
+
+    public DateTime DateCreated { get; set; } = DateTime.UtcNow;
+
+    public int CategoryID { get; set; }
+
+    public string? Slug { get; set; }
+
+    public virtual Category Category { get; set; }
+
+    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual User User { get; set; }
+
+    public Post(int userID, string title, string content, int categoryID, string slug)
     {
-        public int PostID { get; set; }
-
-        public int UserID { get; set; }
-
-        public string Title { get; set; } = string.Empty;
-
-        public string Content { get; set; } = string.Empty;
-
-        public DateTime DateCreated { get; set; } = DateTime.Now;
-
-        public int CategoryID { get; set; }
-
-        public string Slug { get; set; } = string.Empty;
-
-        // Nawigacja do użytkownika, który utworzył post
-        public User User { get; set; } = new User();
-
-        public Post() { }
-
-        public Post(string title, string content, int userId, int categoryId)
-        {
-            Title = title;
-            Content = content;
-            UserID = userId;
-            CategoryID = categoryId;
-            DateCreated = DateTime.UtcNow;
-            Slug = GenerateSlug(title);
-        }
-
-        private string GenerateSlug(string title)
-        {
-            return title.ToLower().Replace(" ", "-");  // Przykład prostego slug-a
-        }
+        UserID = userID;
+        Title = title;
+        Content = content;
+        CategoryID = categoryID;
+        Slug = slug;
     }
 }

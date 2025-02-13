@@ -1,0 +1,40 @@
+﻿@model Skywide.Models.CreateNewCategoryViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Post</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="~/css/create_new.css" />
+</head>
+<body>
+	<div class="whole-page">
+		<div class="page-title">
+			<h1>Skywide.com</h1>
+		</div>
+		<div class="page-main">
+			<div class="editor-category">
+				<form method="post" asp-action="NewCategory">
+					<div class="editor-divs" style="height:100px">
+						<label for="Name">Name :</label>
+						<input id="Name" type="text" name="Name" class="editor-field" style="width:100%" placeholder="Enter new or choose category" value="@Model.Name" />
+						@Html.ValidationMessage("NameError", "", new { @class = "error-message" })
+					</div>
+					<div class="editor-divs editor-main-text" style="height:480px">
+						<label class="labels" for="Description">Description :</label>
+						<textarea name="Description" id="Description" class="editor-field">@Model.Description</textarea>
+						@Html.ValidationMessage("DescriptionError", "", new { @class = "error-message" })
+					</div>
+					<div>
+						<button type="submit">Add new post</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

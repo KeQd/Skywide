@@ -16,7 +16,7 @@ public class RegisterController : Controller
     [HttpGet]
     public IActionResult Register()
     {
-        var model = new RegisterViewModel("", "", "");  
+        var model = new RegisterViewModel();  
 
         return View(model);
     }

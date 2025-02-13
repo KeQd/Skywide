@@ -10,6 +10,13 @@ html, body {
     overflow-x: hidden;
 }
 
+.error-message {
+    margin-top: 4px;
+    font-size: 1em;
+    color: red;
+    font-weight: 600;
+}
+
 .whole-page {
     height: 100%;
     width: 100%;
@@ -50,12 +57,28 @@ html, body {
     overflow-x: hidden;
 }
 
+    .editor-category {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 800px;
+        height: 660px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        font-size: 1.5em;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        overflow: auto;
+    }
+
     .editor {
         position: relative;
         margin-top:20px;
         width: 100%;
         max-width: 800px;
-        height: 600px;
+        height: 760px;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         font-size: 1.5em;
@@ -72,7 +95,10 @@ html, body {
         }
 
             .editor-divs {
+                position: relative;
                 width: 100%;
+                display: flex;
+                flex-direction:column;
             }
 
             .editor-field {
@@ -85,7 +111,7 @@ html, body {
                     outline: 2px solid rgb(131, 162, 168);
                 }
 
-            #Content {
+            #Content, #Description {
                 width: 100%;
                 height: 90%;
             }
@@ -95,6 +121,7 @@ html, body {
                 padding: 5px;
                 border-radius: 10px;
                 border: 3px solid rgb(131, 162, 168);
+                margin-top:14px;
             }
                 button:hover {
                     background-color: rgb(111, 132, 138);
@@ -102,3 +129,27 @@ html, body {
                     border-radius: 10px;
                     border: 3px solid rgb(111, 132, 138);
                 }
+
+            .suggestions-list {
+                position: absolute; /* Wyświetlanie powyżej formularza */
+                top: 100%; /* Ustalamy, by lista była poniżej pola input */
+                left: 0;
+                right: 0;
+                z-index: 10; /* Zasłania inne elementy */
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                max-height: 200px; /* Maksymalna wysokość listy */
+                overflow-y: auto; /* Scrollowanie w przypadku długiej listy */
+            }
+
+                .suggestions-list li {
+                    padding: 8px;
+                    cursor: pointer;
+                }
+
+                    .suggestions-list li:hover {
+                        background-color: #f0f0f0;
+                    }

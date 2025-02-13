@@ -16,16 +16,16 @@ namespace Skywide.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var userIdCookie = Request.Cookies["UserId"];
+            var userIDCookie = Request.Cookies["UserID"];
 
-            if (string.IsNullOrEmpty(userIdCookie))
+            if (string.IsNullOrEmpty(userIDCookie))
             {
                 // Jeśli ciasteczko UserId jest puste, przekieruj na stronę logowania
                 return RedirectToAction("Login", "Login");
             }
 
             // Przekształcenie wartości ciasteczka na int
-            if (int.TryParse(userIdCookie, out int userId))
+            if (int.TryParse(userIDCookie, out int userId))
             {
                 // Pobranie użytkownika na podstawie UserId
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userId);

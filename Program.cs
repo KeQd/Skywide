@@ -64,5 +64,9 @@ app.MapControllerRoute(
     name: "NewPost",
     pattern: "{controller=CreateNewPost}/{action=CreateNewPost}/{id?}");
 
+app.MapControllerRoute(
+    name: "NewCategory",
+    pattern: "{controller=CreateNewCategory}/{action=CreateNewCategory}/{id?}");
+
 // Uruchom aplikacjê
 app.Run();

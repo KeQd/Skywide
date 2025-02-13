@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/KeQd/source/repos/Skywide/Views/CreateNewCategory/CreateNewCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlTmV3Q2F0ZWdvcnlcQ3JlYXRlTmV3Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KeQd/source/repos/Skywide/Views/CreateNewPost/CreateNewPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlTmV3UG9zdFxDcmVhdGVOZXdQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

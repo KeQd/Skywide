@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\CreateNewPost.css",
-      "PackagePath": "staticwebassets\\css\\CreateNewPost.css"
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\create_new.css",
+      "PackagePath": "staticwebassets\\css\\create_new.css"
     },
     {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\login_register.css",
@@ -11,6 +11,10 @@
     {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete.js",
+      "PackagePath": "staticwebassets\\js\\autocomplete.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Skywide.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

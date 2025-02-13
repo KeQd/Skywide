@@ -2,29 +2,16 @@
 {
     public class CreateNewPostViewModel
     {
+        public string CategoryName { get; set; }
         public string Title { get; set; }
-        public string Content { get; set; } 
-        public int CategoryID { get; set; }
-        public List<CategoryViewModel> Categories { get; set; }
-
-        public CreateNewPostViewModel(string title, string content, int categoryID)
+        public string Content { get; set; }
+        public CreateNewPostViewModel() { }
+        public CreateNewPostViewModel(string categoryName, string title, string content)
         {
+            CategoryName = categoryName;
             Title = title;
-            Content = content;
-            CategoryID = categoryID;    
-            Categories = new List<CategoryViewModel>();
+            Content = content;    
         }
     }
 
-    public class CategoryViewModel
-    {
-        public int CategoryID { get; set; }
-        public string Name { get; set; }
-
-        public CategoryViewModel(int categoryId, string name)
-        {
-            CategoryID = categoryId;
-            Name = name;
-        }
-    }
 }
