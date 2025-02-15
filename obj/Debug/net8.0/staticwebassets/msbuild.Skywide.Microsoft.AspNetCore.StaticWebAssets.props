@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\categoriesPages.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Skywide</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Skywide</BasePath>
+      <RelativePath>css/categoriesPages.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6hrm6a05w7</Fingerprint>
+      <Integrity>mqKXUn3Z/cEuafZaBQNeUFJF3EktKkm7OQE0CQp1JXU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\categoriesPages.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\create_new.css'))">
       <SourceType>Package</SourceType>
       <SourceId>Skywide</SourceId>
@@ -12,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ts45fco1d8</Fingerprint>
-      <Integrity>jYYYUMQBP7AMPU8j+0po+GVa7jyUaurJXZ50o6eVVyc=</Integrity>
+      <Fingerprint>wd19ljci5v</Fingerprint>
+      <Integrity>RBABsJCn6QQ2/RsffN9TnBNj3PmiIw/PIjJhBoymOXk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\create_new.css'))</OriginalItemSpec>
@@ -48,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yc2d42civb</Fingerprint>
-      <Integrity>MlnV+AyjhM1uzrYwhjqD5C/bSb0sutpYChP6FoseV/k=</Integrity>
+      <Fingerprint>bprs8db91k</Fingerprint>
+      <Integrity>wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</OriginalItemSpec>
@@ -66,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>48m8ts7tm0</Fingerprint>
-      <Integrity>hP9z7OrOJZ9JnVU2o6z1/6LZ91UTDoyxHp5iuEwWIkI=</Integrity>
+      <Fingerprint>t3qhbnumvk</Fingerprint>
+      <Integrity>l1oIke0H1LWHpKrc7dmfNwpTEnl1hBnkcIm4HfUSSiU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\autocomplete.js'))</OriginalItemSpec>

@@ -80,9 +80,17 @@
     flex-direction:row;
 }
 
+    .filler{
+        height:100%;
+        width:22%;
+    }
+
     .user-wall {
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+        font-size: 1.5em;
         margin-top: 40px;
         width: 70%;
         height: 90%;
@@ -100,13 +108,19 @@
         }
 
     .threads {
-        margin-top: 40px;
+        margin-top: 50px;
         margin-right:30px;
-        height: 90%;
+        height: calc(90% - 4px);
         width: 20%;
         display:flex;
         justify-content:flex-end;
+        flex-direction: column;
+        
     }
+        .content-name {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
         .explore-threads {
             border: 1px solid white;
             border-radius: 20px;
@@ -114,6 +128,24 @@
             height: 100%;
             width: 100%;
             max-width: 400px;
+            padding: 12px;
         }
+        .explore-categories {
+            padding: 6px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: rgb( 131, 162, 168 );
+            font-weight: 500;
+        }
+            .category-link {
+                font-size: 1.7em;
+                color: rgb(9, 7, 105);
+            }
 
-
+                .category-link:hover {
+                    color: rgb(9, 7, 105);
+                    cursor:pointer;
+                }
+            .category-description {
+                font-size: 1.4em;  
+            }

@@ -17,31 +17,52 @@ namespace Skywide.Controllers
         public async Task<IActionResult> Index()
         {
             var userIDCookie = Request.Cookies["UserID"];
-
-            if (string.IsNullOrEmpty(userIDCookie))
+            if (string.IsNullOrEmpty(userIDCookie) || !int.TryParse(userIDCookie, out int userID))
             {
-                // Jeśli ciasteczko UserId jest puste, przekieruj na stronę logowania
                 return RedirectToAction("Login", "Login");
             }
 
-            // Przekształcenie wartości ciasteczka na int
-            if (int.TryParse(userIDCookie, out int userId))
-            {
-                // Pobranie użytkownika na podstawie UserId
-                var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userId);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
 
-                if (user != null)
-                {
-                    // Pobranie postów użytkownika
-                    var posts = await _context.Posts.Where(p => p.UserID == userId).ToListAsync();
+            var userSubscriptions = await _context.Subscriptions
+                .Where(s => s.UserID == userID)
+                .Select(s => s.CategoryID)
+                .ToListAsync();
 
-                    var model = new IndexViewModel(user.UserID, user.Username, posts);
+            var posts = await _context.Posts
+                .Where(p => userSubscriptions.Contains(p.CategoryID))
+                .OrderByDescending(p => p.DateCreated)
+                .Take(10)
+                .Select(p => new PostViewModel
+                (
+                    p.PostID,
+                    p.Title,
+                    p.Content.Substring(0, Math.Min(p.Content.Length, 20)) + "...",
+                    p.Category.Name
+                ))
+                .ToListAsync();
 
-                    return View(model);
-                }
-            }
+            var categories = await _context.Categories
+                .OrderByDescending(c => c.DateCreated)
+                .Take(5)
+                .Select(c => new CategoryViewModel
+                (
+                    c.CategoryID,
+                    c.Name,
+                    c.Description,
+                    c.Slug
+                ))
+                .ToListAsync();
 
-            return RedirectToAction("Login", "Login");
+            var model = new IndexViewModel
+            (
+                userID,
+                user.Username,
+                posts,
+                categories
+            );
+
+            return View(new IndexViewModel(userID, user.Username, posts, categories));
         }
     }
 }

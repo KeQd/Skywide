@@ -1,0 +1,10 @@
+﻿@model List<Skywide.Models.PostViewModel>
+
+@foreach (var post in Model)
+{
+    <div class="post">
+        <h2>@post.Title</h2>
+        <p>@post.ShortContent</p>
+        <span class="category">@post.CategoryName</span>
+    </div>
+}

@@ -23,9 +23,8 @@
 				<form method="post" asp-action="Share">
 					<div class="editor-divs" style="height:100px">
 						<label for="CategoryName">Pick category :</label>
-						<div class
 						<input id="CategoryName" type="text" name="CategoryName" class="editor-field" style="width:100%" placeholder="Enter new or choose category" value="@Model.CategoryName" />
-						<ul id="suggestions" class="suggestions-list"></ul>
+						<ul id="suggestions" class="suggestions-list" hidden></ul>
 						@Html.ValidationMessage("CategoryError", "", new {@class = "error-message"})
 					</div>
 					<div class="editor-divs" style=" height:100px">

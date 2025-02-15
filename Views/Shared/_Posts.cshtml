@@ -1,0 +1,10 @@
+﻿@model List<Skywide.Models.Post>
+
+@foreach (var post in Model)
+{
+    <div class="post">
+        <h3>@post.Title</h3>
+        <p>@post.Content</p>
+        <span>Posted by @post.User.Username on @post.DateCreated.ToString("yyyy-MM-dd")</span>
+    </div>
+}

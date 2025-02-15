@@ -7,12 +7,14 @@ namespace Skywide.Models
 
         public int UserID { get; set; }
         public string Username { get; set; }
-        public List<Post> Posts { get; set; } = new List<Post>();
-        public IndexViewModel(int userID, string username, List<Post> posts)
+        public List<PostViewModel> Posts { get; set; }
+        public List<CategoryViewModel> Categories { get; set; }
+        public IndexViewModel(int userID, string username, List<PostViewModel> posts, List<CategoryViewModel> categories)
         {
             UserID = userID;
             Username = username;
             Posts = posts;
+            Categories = categories;
         }
     }
 }

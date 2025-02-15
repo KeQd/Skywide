@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/KeQd/source/repos/Skywide/Views/Category/CategoryPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KeQd/source/repos/Skywide/Views/CreateNewCategory/CreateNewCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlTmV3Q2F0ZWdvcnlcQ3JlYXRlTmV3Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,10 +48,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/KeQd/source/repos/Skywide/Views/Index/_CategoriesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXhcX0NhdGVnb3JpZXNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KeQd/source/repos/Skywide/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/KeQd/source/repos/Skywide/Views/Register/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KeQd/source/repos/Skywide/Views/Shared/_Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3N0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KeQd/source/repos/Skywide/Views/Shared/_PostsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3N0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

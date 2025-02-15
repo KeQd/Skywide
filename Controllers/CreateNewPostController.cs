@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Skywide.Data;
 using Skywide.Models;
+using Skywide.Utils;
 
 namespace Skywide.Controllers
 {
@@ -38,7 +39,6 @@ namespace Skywide.Controllers
             var categories = await _context.Categories
                 .Where(c => c.Name.Contains(query))
                 .Select(c => new { c.Name })
-                .Take(3)
                 .ToListAsync();
 
             return Ok(categories);
@@ -78,13 +78,27 @@ namespace Skywide.Controllers
                 return View("CreateNewPost", model);
             }
 
-            //var newPost = Post(
-            //    userID: user.UserID,
-            //    title: model.Title,
-            //    content: model.Content,
-            //    categoryID:,
-            //    slug: 
-            //);
+            var category = await _context.Categories
+                .FirstOrDefaultAsync(c => c.Name == model.CategoryName);
+
+            if (category == null)
+            {
+                ModelState.AddModelError("CategoryError", "Category does not exist.");
+                return View("CreateNewPost", model);
+            }
+
+            string Slug = SlugGenerator.GenerateSlug(model.Title);
+
+            var newPost = new Post(
+                userID: user.UserID,
+                title: model.Title,
+                content: model.Content,
+                categoryID: category.CategoryID,
+                slug: Slug
+            );
+
+            _context.Posts.Add(newPost);
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("Index", "Index");
         }

@@ -1,0 +1,37 @@
+﻿@model Skywide.Models.CategoryPageViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@Model.Category.Name</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="~/css/categoriesPages.css" />
+</head>
+<body>
+	<div class="whole-page">
+		<div class="toolbar">
+			<div class="toolbar-left">
+				<a class="create-post" href="~/CreateNewPost/CreateNewPost">New post in this category<i style="margin-left:5px;" class="fa-solid fa-plus"></i></a>
+			</div>
+			<div class="toolbar-mid">
+				<h1>Skywide.com</h1>
+			</div>
+			<div class="toolbar-right">
+				<a class="user-profile" href="~/Account/Account">@Model.Username</a>
+			</div>
+		</div>
+		<div class="page-main">
+			<div class="filler"></div>
+			<div class="wall">
+				<div class="posts-wall">
+					<partial name="_PostsPartial" model="Model.Posts.Select(post => new Skywide.Models.PostViewModel(post)).ToList()" />
+				</div>
+			</div>
+			<div class="filler"></div>
+		</div>
+	</div>
+</body>
+</html>

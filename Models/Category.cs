@@ -16,7 +16,7 @@ public partial class Category
     public string Slug { get; set; }
 
     public int UserID { get; set; }
-
+    public List<Subscription> Subscribers { get; set; }
     public virtual ICollection<Post> Posts { get; set; } = new List<Post>();
 
     public Category(string name, string description, string slug, int userID)

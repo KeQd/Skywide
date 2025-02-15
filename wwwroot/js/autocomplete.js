@@ -1,5 +1,4 @@
-﻿
-document.getElementById("CategoryName").addEventListener("input", function () {
+﻿document.getElementById("CategoryName").addEventListener("input", function () {
     let query = this.value;
 
     if (query.length >= 3) {
@@ -9,30 +8,24 @@ document.getElementById("CategoryName").addEventListener("input", function () {
                 const suggestionsList = document.getElementById("suggestions");
                 suggestionsList.innerHTML = '';
 
-                const limitedResults = data.slice(0, 3);
+                if (data.length > 0) {
+                    suggestionsList.removeAttribute("hidden");
+                } else {
+                    suggestionsList.setAttribute("hidden", "true");
+                }
 
-                limitedResults.forEach(category => {
+                data.forEach(category => {
                     const li = document.createElement("li");
                     li.textContent = category.name;
                     li.addEventListener("click", function () {
-                        // Można zdefiniować, co ma się stać po kliknięciu w sugestię
                         document.getElementById("CategoryName").value = category.name;
-                        suggestionsList.innerHTML = '';
+                        suggestionsList.setAttribute("hidden", "true");
                     });
                     suggestionsList.appendChild(li);
                 });
-
-                // Jeżeli brak wyników, pokaż komunikat
-                if (limitedResults.length === 0) {
-                    const li = document.createElement("li");
-                    li.textContent = "No categories found";
-                    suggestionsList.appendChild(li);
-                }
             })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+            .catch(error => console.error('Error fetching data:', error));
     } else {
-        document.getElementById("suggestions").innerHTML = '';
+        document.getElementById("suggestions").setAttribute("hidden", "true");
     }
 });

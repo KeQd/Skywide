@@ -29,30 +29,20 @@
 			</div>
 		</div>
 		<div class="page-main">
-			<div style="height:100%; width:20%"></div>
+			<div class="filler"></div>
 			<div class="user-wall">
+				<p class="content-name">New posts!</p>
 				<div class="wall-content">
-					fake
+					<partial name="_PostsPartial" model="Model.Posts" />
 				</div>
 			</div>
 			<div class="threads">
-				<div class="explore-threads"></div>
+				<p class="content-name">New categories!</p>
+				<div class="explore-threads">
+					<partial name="_CategoriesPartial" model="Model.Categories" />
+				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-		// Funkcja wywoływana przy naciśnięciu klawisza Enter
-		document.addEventListener("DOMContentLoaded", function() {
-			const searchInput = document.getElementById("searchQuery");
-
-			// Reakcja na naciśnięcie Enter
-			searchInput.addEventListener("keydown", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();  // Zapobieganie domyślnej akcji formularza
-					document.getElementById("search-form").submit();  // Zatwierdzenie formularza
-				}
-			});
-		});
-	</script>
 </body>
 </html>

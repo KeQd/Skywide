@@ -1,0 +1,9 @@
+﻿@model List<Skywide.Models.CategoryViewModel>
+
+@foreach (var category in Model)
+{
+    <div class="explore-categories">
+        <a class="category-link" href="@Url.Action("CategoryPage", "Category", new { slug = category.Slug })">@category.Name</a>
+        <p class="category-description">@category.Description</p>
+    </div>
+}

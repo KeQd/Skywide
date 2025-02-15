@@ -16,7 +16,7 @@ public partial class User
     public string PasswordHash { get; set; } = null!;
 
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
-
+    public List<Subscription> Subscriptions { get; set; }
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
     public virtual ICollection<Post> Posts { get; set; } = new List<Post>();

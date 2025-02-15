@@ -45,18 +45,12 @@ namespace Skywide.Controllers
             }
 
             //Walidacja pól
-            if (string.IsNullOrEmpty(model.Name))
-            {
-                ModelState.AddModelError("NameError", "Name for new category is required.");
-            }
-            if (string.IsNullOrEmpty(model.Description))
-            {
-                ModelState.AddModelError("DescriptionError", "Description is required.");
-            }
-            if (!ModelState.IsValid)
-            {
-                return View("CreateNewCategory", model);
-            }
+            if (string.IsNullOrEmpty(model.Name)) ModelState.AddModelError("NameError", "Name for new category is required.");
+            else if(_context.Categories.Any(c => c.Name == model.Name)) ModelState.AddModelError("NameError", "A category with this name already exists..");
+
+			if (string.IsNullOrEmpty(model.Description)) ModelState.AddModelError("DescriptionError", "Description is required.");
+
+            if (!ModelState.IsValid)return View("CreateNewCategory", model);
 
             string Slug = SlugGenerator.GenerateSlug(model.Name);
 
