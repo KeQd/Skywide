@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Skywide.Views.Index
+namespace Skywide.Views.Post
 {
-    public class CategoriesPartialModel : PageModel
+    public class PostPageModel : PageModel
     {
         public void OnGet()
         {

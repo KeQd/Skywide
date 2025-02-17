@@ -17,15 +17,18 @@ namespace Skywide.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateNewPost()
+        public IActionResult CreateNewPost(string category)
         {
             var userIDCookie = Request.Cookies["UserID"];
             if (string.IsNullOrEmpty(userIDCookie))
             {
                 return RedirectToAction("Login", "Login");
             }
-            var model = new CreateNewPostViewModel();
-            return View(model);
+			var model = new CreateNewPostViewModel
+			{
+				CategoryName = category
+			};
+			return View(model);
         }
 
         [HttpGet("api/categories/autocomplete")]

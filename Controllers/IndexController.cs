@@ -38,7 +38,8 @@ namespace Skywide.Controllers
                     p.PostID,
                     p.Title,
                     p.Content.Substring(0, Math.Min(p.Content.Length, 20)) + "...",
-                    p.Category.Name
+                    p.Category.Name,
+                    p.Slug
                 ))
                 .ToListAsync();
 
@@ -62,7 +63,7 @@ namespace Skywide.Controllers
                 categories
             );
 
-            return View(new IndexViewModel(userID, user.Username, posts, categories));
+            return View(model);
         }
     }
 }

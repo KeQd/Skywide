@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Skywide")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dac8e5c79356a0a3e7708aca0b70847d2c6c01a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6124e0f4285702040663d49e76f96e6fb4fdad17")]
 [assembly: System.Reflection.AssemblyProductAttribute("Skywide")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Skywide")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

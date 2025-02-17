@@ -62,7 +62,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "NewPost",
-    pattern: "{controller=CreateNewPost}/{action=CreateNewPost}/{id?}");
+    pattern: "{controller=CreateNewPost}/{action=CreateNewPost}/{category?}");
 
 app.MapControllerRoute(
     name: "NewCategory",

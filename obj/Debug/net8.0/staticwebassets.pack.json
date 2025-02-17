@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\categoriesPages.css",
-      "PackagePath": "staticwebassets\\css\\categoriesPages.css"
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\categories_pages.css",
+      "PackagePath": "staticwebassets\\css\\categories_pages.css"
     },
     {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\create_new.css",
@@ -19,6 +19,10 @@
     {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete.js",
       "PackagePath": "staticwebassets\\js\\autocomplete.js"
+    },
+    {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll.js",
+      "PackagePath": "staticwebassets\\js\\infinite-scroll.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Skywide.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
