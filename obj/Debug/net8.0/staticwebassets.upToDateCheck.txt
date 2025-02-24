@@ -2,5 +2,8 @@ wwwroot\css\categories_pages.css
 wwwroot\css\create_new.css
 wwwroot\css\login_register.css
 wwwroot\css\main.css
+wwwroot\css\posts_pages.css
 wwwroot\js\autocomplete.js
-wwwroot\js\infinite-scroll.js
+wwwroot\js\autocomplete-search.js
+wwwroot\js\infinite-scroll-cat.js
+wwwroot\js\infinite-scroll-index.js

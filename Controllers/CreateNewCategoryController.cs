@@ -20,24 +20,28 @@ namespace Skywide.Controllers
         [HttpGet]
         public IActionResult CreateNewCategory()
         {
-            var userIDCookie = Request.Cookies["UserID"];
-            if (string.IsNullOrEmpty(userIDCookie))
-            {
-                return RedirectToAction("Login", "Login");
-            }
-            var model = new CreateNewCategoryViewModel();
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
+			var model = new CreateNewCategoryViewModel();
             return View(model);
         }
 
         [HttpPost]
         public async Task<IActionResult> NewCategory(CreateNewCategoryViewModel model)
         {
-            var userIDCookie = Request.Cookies["UserID"];
-            if (string.IsNullOrEmpty(userIDCookie) || !int.TryParse(userIDCookie, out int userID))
-            {
-                return RedirectToAction("Login", "Login");
-            }
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
+			var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
 
             if (user == null)
             {
@@ -54,9 +58,12 @@ namespace Skywide.Controllers
 
             string Slug = SlugGenerator.GenerateSlug(model.Name);
 
-            var newCategory = new Category(
+            var formattedDescription = model.Description
+                .Replace(Environment.NewLine, "<br />");
+
+			var newCategory = new Category(
                 name: model.Name,
-                description: model.Description,
+                description: formattedDescription,
                 slug: Slug,
                 userID: user.UserID
             );

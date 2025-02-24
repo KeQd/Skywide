@@ -3,38 +3,154 @@
   "WorkspaceRootPath": "C:\\Users\\KeQd\\source\\repos\\Skywide\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\shared\\_subs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\shared\\_subs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\shared\\_postspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\shared\\_postspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\shared\\_posts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\shared\\_posts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\shared\\_commentspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\shared\\_commentspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\register\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\register\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\post\\postpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\post\\postpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\createnewpost\\createnewpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\createnewpost\\createnewpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\createnewcategory\\createnewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\createnewcategory\\createnewcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\views\\category\\categorypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:views\\category\\categorypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\categorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\categorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\utils\\sluggenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:utils\\sluggenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\postviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\postviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\postpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\postpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\createnewpostviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\createnewpostviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\createnewcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\createnewcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\models\\categorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:models\\categorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\createnewpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\createnewpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\createnewcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\createnewcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|c:\\users\\keqd\\source\\repos\\skywide\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7027E3F3-4F23-494E-A942-45D858757C28}|Skywide.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 190,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 34,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +158,424 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-23T18:17:25.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Subs.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_Subs.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Subs.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_Subs.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Subs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:59:41.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_PostsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_PostsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_PostsPartial.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_PostsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_PostsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:58:53.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Posts.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_Posts.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Posts.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_Posts.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Posts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:58:48.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_CommentsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_CommentsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_CommentsPartial.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Shared\\_CommentsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_CommentsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:57:50.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Register\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Register\\Register.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Register\\Register.cshtml",
+              "RelativeToolTip": "Views\\Register\\Register.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwC4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:54:51.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "PostPage.cshtml",
               "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Post\\PostPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Post\\PostPage.cshtml",
               "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Post\\PostPage.cshtml",
               "RelativeToolTip": "Views\\Post\\PostPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T16:37:28.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T15:54:34.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PostController.cs",
-              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\PostController.cs",
-              "RelativeToolTip": "Controllers\\PostController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:35:51.019Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Index\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Index\\Index.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Index\\Index.cshtml",
+              "RelativeToolTip": "Views\\Index\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:54:09.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryPageViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\CategoryPageViewModel.cs",
-              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryPageViewModel.cs",
-              "RelativeToolTip": "Models\\CategoryPageViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:30:29.301Z",
-              "EditorCaption": ""
+              "DocumentIndex": 14,
+              "Title": "CreateNewPost.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\CreateNewPost\\CreateNewPost.cshtml",
+              "RelativeDocumentMoniker": "Views\\CreateNewPost\\CreateNewPost.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\CreateNewPost\\CreateNewPost.cshtml",
+              "RelativeToolTip": "Views\\CreateNewPost\\CreateNewPost.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:53:50.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostPageViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\PostPageViewModel.cs",
-              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostPageViewModel.cs",
-              "RelativeToolTip": "Models\\PostPageViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:27:30.457Z",
-              "EditorCaption": ""
+              "DocumentIndex": 15,
+              "Title": "CreateNewCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\CreateNewCategory\\CreateNewCategory.cshtml",
+              "RelativeDocumentMoniker": "Views\\CreateNewCategory\\CreateNewCategory.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\CreateNewCategory\\CreateNewCategory.cshtml",
+              "RelativeToolTip": "Views\\CreateNewCategory\\CreateNewCategory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:53:14.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "CategoryPage.cshtml",
               "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Category\\CategoryPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Category\\CategoryPage.cshtml",
               "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Category\\CategoryPage.cshtml",
               "RelativeToolTip": "Views\\Category\\CategoryPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwDQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T16:27:06.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T15:52:03.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "SlugGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Utils\\SlugGenerator.cs",
+              "RelativeDocumentMoniker": "Utils\\SlugGenerator.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Utils\\SlugGenerator.cs",
+              "RelativeToolTip": "Utils\\SlugGenerator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wCUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:34:59.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:32:40.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "Models\\Subscription.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Subscription.cs",
+              "RelativeToolTip": "Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:32:14.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:31:59.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PostViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\PostViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostViewModel.cs",
+              "RelativeToolTip": "Models\\PostViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:31:40.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PostPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostPageViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\PostPageViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\PostPageViewModel.cs",
+              "RelativeToolTip": "Models\\PostPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:31:34.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "Models\\Post.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Post.cs",
+              "RelativeToolTip": "Models\\Post.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:30:59.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\IndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\IndexViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\IndexViewModel.cs",
+              "RelativeToolTip": "Models\\IndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:30:30.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateNewPostViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CreateNewPostViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CreateNewPostViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CreateNewPostViewModel.cs",
+              "RelativeToolTip": "Models\\CreateNewPostViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:30:13.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateNewCategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CreateNewCategoryViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CreateNewCategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CreateNewCategoryViewModel.cs",
+              "RelativeToolTip": "Models\\CreateNewCategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:29:58.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Comment.cs",
+              "RelativeToolTip": "Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:29:52.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryViewModel.cs",
+              "RelativeToolTip": "Models\\CategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:29:36.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CategoryPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryPageViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CategoryPageViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\CategoryPageViewModel.cs",
+              "RelativeToolTip": "Models\\CategoryPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:29:15.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
               "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\Category.cs",
               "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:26:55.43Z"
+              "WhenOpened": "2025-02-23T15:26:22.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Controllers\\RegisterController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADwv2QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:24:59.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Controllers\\PostController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:24:46.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IndexController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\IndexController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IndexController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\IndexController.cs",
+              "RelativeToolTip": "Controllers\\IndexController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:23:46.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateNewPostController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CreateNewPostController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CreateNewPostController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CreateNewPostController.cs",
+              "RelativeToolTip": "Controllers\\CreateNewPostController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv3EAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:21:58.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateNewCategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CreateNewCategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CreateNewCategoryController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CreateNewCategoryController.cs",
+              "RelativeToolTip": "Controllers\\CreateNewCategoryController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwvzwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:21:03.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:16:32.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:15:41.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:05:58.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwD0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:53:21.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\KeQd\\source\\repos\\Skywide\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T14:37:51.746Z"
             }
           ]
         }

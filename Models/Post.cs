@@ -9,9 +9,9 @@ public partial class Post
 
     public int UserID { get; set; }
 
-    public string Title { get; set; } = null!;
+    public string Title { get; set; }
 
-    public string Content { get; set; } = null!;
+    public string Content { get; set; }
 
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
 
@@ -23,7 +23,7 @@ public partial class Post
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual User User { get; set; }
+    public virtual User Owner { get; set; }
 
     public Post(int userID, string title, string content, int categoryID, string slug)
     {

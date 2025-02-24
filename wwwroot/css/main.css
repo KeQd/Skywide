@@ -1,12 +1,20 @@
-﻿body {
+﻿html, body {
+    min-height: 100vh;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
     font-size:10px;
 }
 
 .toolbar {
+    position: sticky !important;
+    top: 0;
+    left:0;
+    z-index:11;
     background-color: rgb(255,255,255);
     height: 80px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,7 +22,7 @@
 
     .toolbar-left {
         height: 100%;
-        width: 20%;
+        width: calc(50% - 250px);
         display: flex;
         justify-content: flex-start;
         flex-direction:column;
@@ -32,10 +40,12 @@
             }
 
     .toolbar-mid {
+        position: relative;
         height: 100%;
-        width: 60%;
+        width: 500px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center
     }
 
         #search-form {
@@ -51,17 +61,54 @@
                 border: none;
                 border-radius: 20px;
                 background-color: rgb(220, 220, 220);
-                width: 80%;
+                width: 100%;
+                height:40px;
                 max-width:500px;
                 text-align: center;
             }
+                .search:focus {
+                    border: none;
+                    outline: none;
+                }
+
+            #suggestions {
+                position: absolute;
+                top: calc(55% + 10px);
+                left: 0;
+                right: 0;
+                z-index: 10;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(111, 132, 138);
+                border: 1px none #ccc;
+                border-radius: 6px;
+                max-height: 120px;
+                overflow-y: auto;
+            }
+
+                #suggestions li {
+                    font-size:1.4em;
+                    padding: 8px;
+                    cursor: pointer;
+                }
+
+                    #suggestions li:hover {
+                        background-color: #f0f0f0;
+                    }
+
+                    .highlighted{
+                        background-color: #f0f0f0;
+                    }
+
 
     .toolbar-right {
         height: 100%;
-        width: 20%;
+        width: calc(50% - 250px);
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        margin-right: 20px;
     }
         .user-profile {
             margin-right: 20px;
@@ -72,12 +119,32 @@
                 color: black;
             }
 
+        .logout-button {
+            max-width: 30px;
+            max-height: 30px;
+            padding: 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+            .logout-button i {
+                font-size: 1.5em;
+                pointer-events: none;
+            }
+
 .page-main {
-    height: calc(100vh - 80px);
-    width: 100vw;
+    min-height: calc(100vh - 80px);
+    padding-top: 60px;
+    width: 100%;
     background-color: rgb( 131, 162, 168 );
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
 
     .filler{
@@ -91,7 +158,6 @@
         align-items:center;
         flex-direction:column;
         font-size: 1.5em;
-        margin-top: 40px;
         width: 70%;
         height: 90%;
     }
@@ -100,12 +166,61 @@
             border: 1px solid white;
             border-radius: 20px;
             background-color: rgb(255,255,255);
-            height: 100%;
+            min-height:200px;
             width: 60%;
             max-width: 600px;
             padding:12px;
             font-size:1.4em;
+            margin-bottom:40px;
         }
+
+.post {
+    width: 100%;
+    padding: 6px;
+    background-color: rgb( 131, 162, 168 );
+    border-radius: 6px;
+    margin-bottom: 10px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.post-title {
+    font-size: 1.1em;
+    color: rgb(9, 7, 105);
+}
+
+    .post-title:hover {
+        color: rgb(9, 7, 105);
+        cursor: pointer;
+    }
+
+.post-shortcontent {
+    font-size: 0.9em;
+}
+
+.author{
+    font-size:0.8em;
+}
+.delete-form{
+    position:relative;
+    margin-bottom:20px;
+}
+.delete {
+    margin-top: 20px;
+    font-size: 0.8em;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb( 131, 162, 168 );
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin: 0;
+    padding: 0;
+    max-width: 1px;
+    max-height: 1px;
+}
 
     .threads {
         margin-top: 50px;
@@ -113,7 +228,7 @@
         height: calc(90% - 4px);
         width: 20%;
         display:flex;
-        justify-content:flex-end;
+        justify-content:flex-start;
         flex-direction: column;
         
     }
@@ -125,7 +240,7 @@
             border: 1px solid white;
             border-radius: 20px;
             background-color: rgb(255,255,255);
-            height: 100%;
+            min-height:200px;
             width: 100%;
             max-width: 400px;
             padding: 12px;

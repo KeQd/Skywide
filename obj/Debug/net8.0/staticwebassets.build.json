@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kMzbUWNo3mpOd36Cgzj7SYmJAv/R3KlGAHs9+lciH70=",
+  "Hash": "vJd0tFteW/z7mP4H0NlOKatKuV01f3OBaZI3q0XxLrk=",
   "Source": "Skywide",
   "BasePath": "_content/Skywide",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c8grqwsjzs",
-      "Integrity": "FBtWLOqBK2KL3QuzI4ZDy/J1ZMS9tL/cXDzAcNLYqzg=",
+      "Fingerprint": "yd2yvrhb1k",
+      "Integrity": "ltu/nJHY+6BhuhXcCesbBugUtg6fcTsBcV4gGpXghIg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\categories_pages.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lcvymlrtb6",
-      "Integrity": "y/IMS+o0txKPnOFhsdOZ9FLGR2wZz9p12EpZ4UjCeXw=",
+      "Fingerprint": "yrebdyhusj",
+      "Integrity": "clutXe7FeOubcmemAoNaQ6XzVRYEy3+/9LPsK6YZmlM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\create_new.css"
@@ -1354,11 +1354,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bprs8db91k",
-      "Integrity": "wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw=",
+      "Fingerprint": "95oj3mmdjs",
+      "Integrity": "/Zv8+5K2mPtiQoXR7LCwFc28wvkkrNmLcsj2ETwLiD0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\posts_pages.css",
+      "SourceId": "Skywide",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\",
+      "BasePath": "_content/Skywide",
+      "RelativePath": "css/posts_pages#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fo8bkpx2wg",
+      "Integrity": "ryignG2HVnd/OwFE5tFDVuokxf+v0l2FnUyFsIrI52w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\posts_pages.css"
     },
     {
       "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete.js",
@@ -1382,12 +1403,12 @@
       "OriginalItemSpec": "wwwroot\\js\\autocomplete.js"
     },
     {
-      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll.js",
+      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete-search.js",
       "SourceId": "Skywide",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\",
       "BasePath": "_content/Skywide",
-      "RelativePath": "js/infinite-scroll#[.{fingerprint}]?.js",
+      "RelativePath": "js/autocomplete-search#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1396,59 +1417,56 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l272kcrt0d",
-      "Integrity": "sztmKxS5O5DFM6HgFNAZh0IlZZTjHweglSMFp4ofSmk=",
+      "Fingerprint": "8wpiptd6br",
+      "Integrity": "aA9dWp5OOMmqjAPZ9ov6o4IdgOrQkyT2cSRaUvzuzao=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\infinite-scroll.js"
+      "OriginalItemSpec": "wwwroot\\js\\autocomplete-search.js"
+    },
+    {
+      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-cat.js",
+      "SourceId": "Skywide",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\",
+      "BasePath": "_content/Skywide",
+      "RelativePath": "js/infinite-scroll-cat#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h7f4y43oay",
+      "Integrity": "/UcKywGKIGMdpeG0fdZHBGV9X3ygvGamMfbs1Q4ajic=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\infinite-scroll-cat.js"
+    },
+    {
+      "Identity": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-index.js",
+      "SourceId": "Skywide",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\",
+      "BasePath": "_content/Skywide",
+      "RelativePath": "js/infinite-scroll-index#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j0yc340w09",
+      "Integrity": "M6oc4EbO/oNzYqfaHytkez9WhJv8MIVD8ZEDhrR3+Hc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\infinite-scroll-index.js"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "css/categories_pages.c8grqwsjzs.css",
-      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\categories_pages.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2344"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FBtWLOqBK2KL3QuzI4ZDy/J1ZMS9tL/cXDzAcNLYqzg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:20:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c8grqwsjzs"
-        },
-        {
-          "Name": "label",
-          "Value": "css/categories_pages.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FBtWLOqBK2KL3QuzI4ZDy/J1ZMS9tL/cXDzAcNLYqzg="
-        }
-      ]
-    },
     {
       "Route": "css/categories_pages.css",
       "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\categories_pages.css",
@@ -1460,7 +1478,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2344"
+          "Value": "3341"
         },
         {
           "Name": "Content-Type",
@@ -1468,11 +1486,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FBtWLOqBK2KL3QuzI4ZDy/J1ZMS9tL/cXDzAcNLYqzg=\""
+          "Value": "\"ltu/nJHY+6BhuhXcCesbBugUtg6fcTsBcV4gGpXghIg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:20:10 GMT"
+          "Value": "Fri, 21 Feb 2025 15:18:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1482,7 +1500,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FBtWLOqBK2KL3QuzI4ZDy/J1ZMS9tL/cXDzAcNLYqzg="
+          "Value": "sha256-ltu/nJHY+6BhuhXcCesbBugUtg6fcTsBcV4gGpXghIg="
+        }
+      ]
+    },
+    {
+      "Route": "css/categories_pages.yd2yvrhb1k.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\categories_pages.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ltu/nJHY+6BhuhXcCesbBugUtg6fcTsBcV4gGpXghIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 15:18:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yd2yvrhb1k"
+        },
+        {
+          "Name": "label",
+          "Value": "css/categories_pages.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ltu/nJHY+6BhuhXcCesbBugUtg6fcTsBcV4gGpXghIg="
         }
       ]
     },
@@ -1497,7 +1560,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3962"
+          "Value": "4088"
         },
         {
           "Name": "Content-Type",
@@ -1505,11 +1568,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/IMS+o0txKPnOFhsdOZ9FLGR2wZz9p12EpZ4UjCeXw=\""
+          "Value": "\"clutXe7FeOubcmemAoNaQ6XzVRYEy3+/9LPsK6YZmlM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:21:38 GMT"
+          "Value": "Tue, 18 Feb 2025 17:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1519,12 +1582,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y/IMS+o0txKPnOFhsdOZ9FLGR2wZz9p12EpZ4UjCeXw="
+          "Value": "sha256-clutXe7FeOubcmemAoNaQ6XzVRYEy3+/9LPsK6YZmlM="
         }
       ]
     },
     {
-      "Route": "css/create_new.lcvymlrtb6.css",
+      "Route": "css/create_new.yrebdyhusj.css",
       "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\create_new.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1534,7 +1597,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3962"
+          "Value": "4088"
         },
         {
           "Name": "Content-Type",
@@ -1542,11 +1605,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/IMS+o0txKPnOFhsdOZ9FLGR2wZz9p12EpZ4UjCeXw=\""
+          "Value": "\"clutXe7FeOubcmemAoNaQ6XzVRYEy3+/9LPsK6YZmlM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:21:38 GMT"
+          "Value": "Tue, 18 Feb 2025 17:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1556,7 +1619,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lcvymlrtb6"
+          "Value": "yrebdyhusj"
         },
         {
           "Name": "label",
@@ -1564,7 +1627,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y/IMS+o0txKPnOFhsdOZ9FLGR2wZz9p12EpZ4UjCeXw="
+          "Value": "sha256-clutXe7FeOubcmemAoNaQ6XzVRYEy3+/9LPsK6YZmlM="
         }
       ]
     },
@@ -1651,7 +1714,7 @@
       ]
     },
     {
-      "Route": "css/main.bprs8db91k.css",
+      "Route": "css/main.95oj3mmdjs.css",
       "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1661,7 +1724,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3622"
+          "Value": "6370"
         },
         {
           "Name": "Content-Type",
@@ -1669,11 +1732,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw=\""
+          "Value": "\"/Zv8+5K2mPtiQoXR7LCwFc28wvkkrNmLcsj2ETwLiD0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:59:09 GMT"
+          "Value": "Fri, 21 Feb 2025 16:36:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1683,7 +1746,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bprs8db91k"
+          "Value": "95oj3mmdjs"
         },
         {
           "Name": "label",
@@ -1691,7 +1754,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw="
+          "Value": "sha256-/Zv8+5K2mPtiQoXR7LCwFc28wvkkrNmLcsj2ETwLiD0="
         }
       ]
     },
@@ -1706,7 +1769,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3622"
+          "Value": "6370"
         },
         {
           "Name": "Content-Type",
@@ -1714,11 +1777,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw=\""
+          "Value": "\"/Zv8+5K2mPtiQoXR7LCwFc28wvkkrNmLcsj2ETwLiD0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:59:09 GMT"
+          "Value": "Fri, 21 Feb 2025 16:36:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1728,7 +1791,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wTgNWjkKmWWpIjkbg+30tZHMoUK3evi+sThdpynECBw="
+          "Value": "sha256-/Zv8+5K2mPtiQoXR7LCwFc28wvkkrNmLcsj2ETwLiD0="
+        }
+      ]
+    },
+    {
+      "Route": "css/posts_pages.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\posts_pages.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ryignG2HVnd/OwFE5tFDVuokxf+v0l2FnUyFsIrI52w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 15:14:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ryignG2HVnd/OwFE5tFDVuokxf+v0l2FnUyFsIrI52w="
+        }
+      ]
+    },
+    {
+      "Route": "css/posts_pages.fo8bkpx2wg.css",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\posts_pages.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ryignG2HVnd/OwFE5tFDVuokxf+v0l2FnUyFsIrI52w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 15:14:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fo8bkpx2wg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/posts_pages.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ryignG2HVnd/OwFE5tFDVuokxf+v0l2FnUyFsIrI52w="
         }
       ]
     },
@@ -4035,8 +4180,8 @@
       ]
     },
     {
-      "Route": "js/infinite-scroll.js",
-      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll.js",
+      "Route": "js/autocomplete-search.8wpiptd6br.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete-search.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4045,7 +4190,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1635"
+          "Value": "2901"
         },
         {
           "Name": "Content-Type",
@@ -4053,48 +4198,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sztmKxS5O5DFM6HgFNAZh0IlZZTjHweglSMFp4ofSmk=\""
+          "Value": "\"aA9dWp5OOMmqjAPZ9ov6o4IdgOrQkyT2cSRaUvzuzao=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:03:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-sztmKxS5O5DFM6HgFNAZh0IlZZTjHweglSMFp4ofSmk="
-        }
-      ]
-    },
-    {
-      "Route": "js/infinite-scroll.l272kcrt0d.js",
-      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1635"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sztmKxS5O5DFM6HgFNAZh0IlZZTjHweglSMFp4ofSmk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:03:01 GMT"
+          "Value": "Fri, 21 Feb 2025 12:24:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4104,15 +4212,216 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l272kcrt0d"
+          "Value": "8wpiptd6br"
         },
         {
           "Name": "label",
-          "Value": "js/infinite-scroll.js"
+          "Value": "js/autocomplete-search.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sztmKxS5O5DFM6HgFNAZh0IlZZTjHweglSMFp4ofSmk="
+          "Value": "sha256-aA9dWp5OOMmqjAPZ9ov6o4IdgOrQkyT2cSRaUvzuzao="
+        }
+      ]
+    },
+    {
+      "Route": "js/autocomplete-search.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete-search.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aA9dWp5OOMmqjAPZ9ov6o4IdgOrQkyT2cSRaUvzuzao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 12:24:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aA9dWp5OOMmqjAPZ9ov6o4IdgOrQkyT2cSRaUvzuzao="
+        }
+      ]
+    },
+    {
+      "Route": "js/infinite-scroll-cat.h7f4y43oay.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-cat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UcKywGKIGMdpeG0fdZHBGV9X3ygvGamMfbs1Q4ajic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:32:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h7f4y43oay"
+        },
+        {
+          "Name": "label",
+          "Value": "js/infinite-scroll-cat.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/UcKywGKIGMdpeG0fdZHBGV9X3ygvGamMfbs1Q4ajic="
+        }
+      ]
+    },
+    {
+      "Route": "js/infinite-scroll-cat.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-cat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/UcKywGKIGMdpeG0fdZHBGV9X3ygvGamMfbs1Q4ajic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:32:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/UcKywGKIGMdpeG0fdZHBGV9X3ygvGamMfbs1Q4ajic="
+        }
+      ]
+    },
+    {
+      "Route": "js/infinite-scroll-index.j0yc340w09.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6oc4EbO/oNzYqfaHytkez9WhJv8MIVD8ZEDhrR3+Hc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:37:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j0yc340w09"
+        },
+        {
+          "Name": "label",
+          "Value": "js/infinite-scroll-index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6oc4EbO/oNzYqfaHytkez9WhJv8MIVD8ZEDhrR3+Hc="
+        }
+      ]
+    },
+    {
+      "Route": "js/infinite-scroll-index.js",
+      "AssetFile": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6oc4EbO/oNzYqfaHytkez9WhJv8MIVD8ZEDhrR3+Hc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 16:37:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6oc4EbO/oNzYqfaHytkez9WhJv8MIVD8ZEDhrR3+Hc="
         }
       ]
     }

@@ -3,7 +3,10 @@
 @foreach (var category in Model)
 {
     <div class="explore-categories">
-        <a class="category-link" href="@Url.Action("CategoryPage", "Category", new { slug = category.Slug })">@category.Name</a>
-        <p class="category-description">@category.Description</p>
+        <div style="display:flex;justify-content:space-between;">
+            <a class="category-link" href="@Url.Action("CategoryPage", "Category", new { slug = category.Slug })">@category.Name</a>
+            <p style="font-size:1.3em;">Category by: @category.AuthorName</p>
+        </div>
+        <p class="category-description">@Html.Raw(category.Description)</p>
     </div>
 }

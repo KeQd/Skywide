@@ -2,16 +2,16 @@
 {
 	public class PostPageViewModel
 	{
+		public int UserID { get; set; }
 		public string Username { get; set; }
-		public string CategoryID { get; set; }
-		public List<Post> Posts { get; set; }
-		public List<Comment> Comments { get; set; }
-		public PostPageViewModel(string username, string categoryID, List<Post> posts, List<Comment> comments)
+		public Post Post { get; set; }
+		public List<Comment> Comments { get; set; } = new List<Comment>();
+		public PostPageViewModel(int userID, string username, Post post, List<Comment> comments)
 		{
+			UserID = userID;
 			Username = username;
-			CategoryID = categoryID;
-			Posts = posts;
-			Comments = comments;
+			Post = post;
+			Comments = comments ?? new List<Comment>();
 		}
 	}
 }

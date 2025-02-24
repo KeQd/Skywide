@@ -17,12 +17,24 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\css\\posts_pages.css",
+      "PackagePath": "staticwebassets\\css\\posts_pages.css"
+    },
+    {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete-search.js",
+      "PackagePath": "staticwebassets\\js\\autocomplete-search.js"
+    },
+    {
       "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\autocomplete.js",
       "PackagePath": "staticwebassets\\js\\autocomplete.js"
     },
     {
-      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll.js",
-      "PackagePath": "staticwebassets\\js\\infinite-scroll.js"
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-cat.js",
+      "PackagePath": "staticwebassets\\js\\infinite-scroll-cat.js"
+    },
+    {
+      "Id": "C:\\Users\\KeQd\\source\\repos\\Skywide\\wwwroot\\js\\infinite-scroll-index.js",
+      "PackagePath": "staticwebassets\\js\\infinite-scroll-index.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Skywide.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -1,9 +1,43 @@
 ﻿@model List<Skywide.Models.PostViewModel>
+@{
+    var page = ViewData["CurrentView"] as string;
+}
 
 @foreach (var post in Model)
 {
     <div class="post">
-        <a class="post-title" href="@Url.Action("PostPage", "Post", new { slug = post.Slug })">@post.Title</a>
-        <p class="post-shortcontent">@post.ShortContent</p>
+        @if (post.Owner.UserID == post.Logged.UserID || post.Logged.UserID == post.Category.UserID || post.Logged.UserID == 1)
+        {
+            <form method="post" class="delete-form"
+                  action="@{
+                      if (page == "Category")
+                      {
+                          // Jeżeli to jest strona kategorii, to używamy akcji DeletePost w kategorii
+                              @Url.Action("DeletePost", "Category", new { postID = post.ID, slug = ViewData["slug"] })
+                      }
+                      else if (page == "Index")
+                      {
+                          // Jeżeli to jest strona główna (Index), to używamy akcji DeletePost w IndexController
+                              @Url.Action("DeletePost", "Index", new { postID = post.ID })
+                      }
+                  }">
+                <input type="hidden" name="postID" value="@post.ID" />
+                @if (page == "Category")
+                {
+                    var slug = ViewData["slug"] as string;
+                    <input type="hidden" name="slug" value="@slug" />
+                }
+                <button type="submit" class="delete">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+            </form>
+        }
+        <div style="display:flex; justify-content:space-between; margin-right:40px;">
+            <a class="post-title" href="@Url.Action("PostPage", "Post", new { slug = post.Slug })">
+                @post.Title
+            </a>
+            <p class="author">Post by: @post.Owner.Username</p>
+        </div>
+        <p class="post-shortcontent">@Html.Raw(post.ShortContent)</p>
     </div>
 }

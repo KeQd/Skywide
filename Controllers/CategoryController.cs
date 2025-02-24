@@ -2,6 +2,7 @@
 using Skywide.Data;
 using Skywide.Models;
 using Microsoft.EntityFrameworkCore;
+using Skywide.Views.Shared;
 
 namespace Skywide.Controllers
 {
@@ -18,11 +19,12 @@ namespace Skywide.Controllers
 		public async Task<IActionResult> CategoryPage(string slug, int page = 1)
 		{
 
-			var userIDCookie = Request.Cookies["UserID"];
-			if (string.IsNullOrEmpty(userIDCookie) || !int.TryParse(userIDCookie, out int userID))
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
 			{
 				return RedirectToAction("Login", "Login");
 			}
+			int userID = userIDNullable.Value;
 
 			var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
 
@@ -30,39 +32,120 @@ namespace Skywide.Controllers
 				.Where(c => c.Slug == slug)
 				.FirstOrDefaultAsync();
 
-			// Jeśli kategoria nie istnieje, przekieruj do strony 404
 			if (category == null)
 			{
 				return NotFound();
 			}
 
+			bool isSubscribed = await _context.Subscriptions.AnyAsync(s => s.UserID == userID && s.CategoryID == category.CategoryID);
+
 			// Pobieranie postów związanych z tą kategorią, z paginacją
 			int pageSize = 10;
 			var posts = await _context.Posts
-				.Where(p => p.CategoryID == category.CategoryID)
-				.OrderByDescending(p => p.DateCreated)
-				.Skip((page - 1) * pageSize)  // Przesuwamy się o odpowiednią liczbę postów
-				.Take(pageSize)               // Pobieramy tylko określoną liczbę
-				.ToListAsync();
+			.Where(p => p.CategoryID == category.CategoryID)
+			.OrderByDescending(p => p.DateCreated)
+			.Skip((page - 1) * pageSize)
+			.Take(pageSize)
+			.ToListAsync();
 
-			var postViewModels = posts.Select(p => new PostViewModel
-			(
-				p.PostID,
-				p.Title,
-				p.Content.Substring(0, 200) + "...",
-				p.Category.Name,
-				p.Slug
-			)).ToList();
+			
 
-			// Zwracamy tylko część widoku, zamiast całego modelu
-			if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+			// Pobieramy autorów na podstawie UserID z postów
+			var postViewModels = new List<PostViewModel>();
+
+			foreach (var post in posts)
 			{
-				return PartialView("_PostsPartial", postViewModels);  // Zwróć tylko posty, a nie cały model
+				var postOwner = await _context.Users.FirstOrDefaultAsync(u => u.UserID == post.UserID);
+
+				var postViewModel = new PostViewModel
+				(
+					post.PostID,
+					post.Title,
+					post.Content.Length > 200 ? post.Content.Substring(0, 200) + "..." : post.Content,
+					post.Category.Name,
+					post.Slug,
+					postOwner,
+					user,
+					category
+				);
+
+				postViewModels.Add(postViewModel);
 			}
 
-			// Jeśli to nie jest zapytanie AJAX, zwracamy pełny widok
-			var model = new CategoryPageViewModel(user.Username, category, postViewModels);
+			ViewData["AuthorName"] = user.Username;
+			ViewData["CategoryOwnerID"] = category.UserID;
+			ViewData["CurrentView"] = "Category";
+			ViewData["slug"] = slug;
+
+			if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+			{
+				return PartialView("_PostsPartial", postViewModels);
+			}
+
+			var model = new CategoryPageViewModel(user.Username, category, isSubscribed, postViewModels);
 			return View(model);
+
 		}
+
+		[HttpPost]
+		public async Task<IActionResult> Subscribe(int categoryID)
+		{
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
+			var subscription = new Subscription(userID, categoryID);
+
+			_context.Subscriptions.Add(subscription);
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction("CategoryPage", new { slug = _context.Categories.Find(categoryID)?.Slug });
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Unsubscribe(int categoryID)
+		{
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
+			var subscription = await _context.Subscriptions
+				.FirstOrDefaultAsync(s => s.UserID == userID && s.CategoryID == categoryID);
+
+			if (subscription != null)
+			{
+				_context.Subscriptions.Remove(subscription);
+				await _context.SaveChangesAsync();
+			}
+
+			return RedirectToAction("CategoryPage", new { slug = _context.Categories.Find(categoryID)?.Slug });
+		}
+
+		[HttpPost]
+		[Route("Category/DeletePost")]
+		public async Task<IActionResult> DeletePost(int postID, string slug)
+		{
+			var post = await _context.Posts
+				.Where(p => p.PostID == postID)
+				.FirstOrDefaultAsync();
+
+			if (post == null)
+			{
+				return NotFound();
+			}
+
+			_context.Posts.Remove(post);
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction("CategoryPage", new { slug = slug });
+		}
+
+
 	}
 }

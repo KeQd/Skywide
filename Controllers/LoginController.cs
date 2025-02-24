@@ -17,7 +17,10 @@ namespace Skywide.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            var model = new LoginViewModel("admin", "admin");
+			HttpContext.Session.Remove("Username");
+			HttpContext.Session.Remove("UserID");
+
+			var model = new LoginViewModel("admin", "admin");
 
             return View(model);
         }
@@ -52,19 +55,11 @@ namespace Skywide.Controllers
                 return View("Login", model);
             }
 
-            var cookieOptions = new CookieOptions
-            {
-                Expires = DateTime.Now.AddHours(1),
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Lax
-            };
+			// Zapisz dane użytkownika w ciasteczku
+			HttpContext.Session.SetString("Username", existingUser.Username);
+			HttpContext.Session.SetInt32("UserID", existingUser.UserID);
 
-            // Zapisz dane użytkownika w ciasteczku
-            Response.Cookies.Append("Username", existingUser.Username, cookieOptions);
-            Response.Cookies.Append("UserID", existingUser.UserID.ToString(), cookieOptions);
-
-            return RedirectToAction("Index", "Index");
+			return RedirectToAction("Index", "Index");
         }
     }
 }

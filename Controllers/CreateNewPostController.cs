@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Web;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Skywide.Data;
 using Skywide.Models;
@@ -19,11 +20,13 @@ namespace Skywide.Controllers
         [HttpGet]
         public IActionResult CreateNewPost(string category)
         {
-            var userIDCookie = Request.Cookies["UserID"];
-            if (string.IsNullOrEmpty(userIDCookie))
-            {
-                return RedirectToAction("Login", "Login");
-            }
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
 			var model = new CreateNewPostViewModel
 			{
 				CategoryName = category
@@ -38,10 +41,11 @@ namespace Skywide.Controllers
             {
                 return BadRequest("Query cannot be empty.");
             }
+			var lowerQuery = query.ToLower();
 
-            var categories = await _context.Categories
-                .Where(c => c.Name.Contains(query))
-                .Select(c => new { c.Name })
+			var categories = await _context.Categories
+				.Where(c => c.Name.ToLower().Contains(lowerQuery))
+				.Select(c => new { c.Name })
                 .ToListAsync();
 
             return Ok(categories);
@@ -51,12 +55,14 @@ namespace Skywide.Controllers
         [HttpPost]
         public async Task<IActionResult> Share(CreateNewPostViewModel model)
         {
-            var userIDCookie = Request.Cookies["UserID"];
-            if (string.IsNullOrEmpty(userIDCookie) || !int.TryParse(userIDCookie, out int userID))
-            {
-                return RedirectToAction("Login", "Login");
-            }
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
+			var userIDNullable = HttpContext.Session.GetInt32("UserID");
+			if (userIDNullable == null)
+			{
+				return RedirectToAction("Login", "Login");
+			}
+			int userID = userIDNullable.Value;
+
+			var user = await _context.Users.FirstOrDefaultAsync(u => u.UserID == userID);
 
             if (user == null)
             {
@@ -90,12 +96,23 @@ namespace Skywide.Controllers
                 return View("CreateNewPost", model);
             }
 
-            string Slug = SlugGenerator.GenerateSlug(model.Title);
+            var formattedContent = model.Content
+                .Replace(Environment.NewLine, "<br />");
 
-            var newPost = new Post(
+            string title_of_post = model.Title;
+
+			if (_context.Posts.Any(p => p.Title == model.Title))
+            {
+				title_of_post = model.Title + _context.Posts.Max(p => p.PostID + 1).ToString();
+
+			};
+
+			string Slug = SlugGenerator.GenerateSlug(title_of_post);
+
+			var newPost = new Post(
                 userID: user.UserID,
                 title: model.Title,
-                content: model.Content,
+                content: formattedContent,
                 categoryID: category.CategoryID,
                 slug: Slug
             );

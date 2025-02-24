@@ -1,0 +1,16 @@
+﻿@model Skywide.Views.Shared.SubsViewModel
+
+@if (!Model.IsSubscribed)
+{
+    <form method="post" action="@Url.Action("Subscribe", "Category")">
+        <input type="hidden" name="categoryID" value="@Model.CategoryID" />
+        <button type="submit">Subscribe to this category <i style="margin-left:5px;" class="fa-solid fa-plus"></i></button>
+    </form>
+}
+else
+{
+    <form method="post" action="@Url.Action("Unsubscribe", "Category")">
+        <input type="hidden" name="categoryID" value="@Model.CategoryID" />
+        <button type="submit">Unsubscribe this category <i class="fa-solid fa-minus"></i></button>
+    </form>
+}

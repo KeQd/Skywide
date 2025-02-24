@@ -1,0 +1,238 @@
+﻿html {
+	height: 100%
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	font-size: 10px;
+}
+
+.whole-page {
+	height: 100%;
+}
+
+.toolbar {
+	position: sticky;
+	top: 0;
+	background-color: rgb(255,255,255);
+	height: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	.toolbar-left {
+		height: 100%;
+		width: 20%;
+		display: flex;
+		align-items: center;
+	}
+
+	.toolbar-mid {
+		height: 100%;
+		width: 60%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.page-title {
+			background-color: rgb(255,255,255);
+			min-height: 40px;
+		}
+
+			.skywide {
+				font-size: 2.5em;
+				margin: 0;
+				font-family: "Courier New", serif;
+				font-weight: 1000;
+				font-style: italic;
+				letter-spacing: 10px;
+				color: black;
+				z-index:999;
+			}
+
+				.skywide:hover {
+					color: black;
+					cursor: pointer;
+					text-decoration: none;
+				}
+
+	.toolbar-right {
+		height: 100%;
+		width: 20%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 20px;
+		gap: 15px;
+}
+
+		.user-profile {
+			margin-right: 20px;
+			color: black;
+			font-size: 1.5em;
+		}
+
+			.user-profile:hover {
+				color: black;
+			}
+
+			.logout-button {
+				max-width: 30px;
+				max-height: 30px;
+				padding: 0;
+				border: none;
+				background: none;
+				cursor: pointer;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				margin-top:5px;
+			}
+
+				.logout-button i {
+					font-size: 1.5em;
+					pointer-events: none;
+				}
+
+
+
+
+
+.page-main {
+	min-height: calc(100vh - 60px);
+	background-color: rgb( 131, 162, 168 );
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filler {
+	height: 100%;
+	width: 22%;
+}
+
+.wall {
+	height: 100%;
+	width: 58%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+	.post-wall {
+		padding: 12px;
+		max-width: 1000px;
+		width: 100%;
+		min-height: 100px;
+		height: 100%;
+		background-color: rgb(255,255,255);
+		border-radius: 20px;
+		margin-bottom:10px;
+	}
+
+		.post-title{
+			font-size:2.5em;
+		}
+
+		.post-content {
+			line-height: 1.8;
+			font-size: 1.6em;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			white-space: pre-wrap;
+		}
+
+	.separator{
+		max-width: 1000px;
+		height:4px;
+		border-bottom: solid 1px black;
+		margin: 10px 0 10px 0;
+	}
+
+	.post-newcomment{
+		width:100%;
+		height:230px;
+		margin-top:10px;
+	}
+	.form-addcomment {
+		display: flex;
+		flex-direction: column;
+	}
+
+		.comment-field-div{
+			width:100%;
+			height:230px;
+			display:flex;
+			justify-content:left;
+			flex-direction:column;
+		}
+		.comment-field {
+			padding:6px;
+			line-height: 1.8;
+			font-size: 1.5em;
+			max-width: 800px;
+			width: 80%;
+			height: 200px;
+			border: none;
+			border-radius: 10px;
+			background-color: rgb(240, 240, 240);
+		}
+		.add-comment {
+			margin-top:20px;
+			font-size:1.6em;
+			width:200px;
+			height:30px;
+			border: none;
+			border-radius:12px;
+		}
+
+	.post-comments{
+		width:100%;
+	}
+
+		.comment {
+			max-width: 1000px;
+			position: relative;
+			margin-bottom: 20px;
+			padding: 5px;
+		}
+
+		.delete {
+			margin-top: 20px;
+			font-size: 1.6em;
+			width: 200px;
+			height: 30px;
+			border: none;
+			border-radius: 12px;
+			background-color: rgb( 131, 162, 168 );
+			position: absolute;
+			top: 0;
+			right: 25px;
+			margin: 0;
+			padding: 0;
+			max-width: 1px;
+			max-height: 1px;
+		}
+
+			.comment-content {
+				line-height: 1.8;
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+				white-space: pre-wrap;
+				font-size: 1.6em;
+				padding: 6px;
+				margin: 0;
+				background-color: rgb(240, 240, 240);
+				max-width: 100%;
+				border-radius: 12px;
+			}
+			.comment-info{
+				font-size:1.4em;
+			}
+

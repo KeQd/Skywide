@@ -1,0 +1,28 @@
+﻿@model List<Skywide.Models.Comment>
+@{
+    var currentUserID = ViewData["UserID"] as int? ?? 0;
+    var postOwnerID = ViewData["PostOwnerID"] as int? ?? 0;
+}
+@if (Model == null || !Model.Any())
+{
+    <p>Brak komentarzy.</p>
+}
+else{
+    @foreach (var comment in Model)
+    {
+        <div class="comment">
+            <small class="comment-info">By: @comment.User.Username on @comment.DateCreated.ToString("yyyy-MM-dd HH:mm")</small>
+
+            @if (comment.UserID == currentUserID || currentUserID == postOwnerID || currentUserID == 1)
+            {
+                <form method="post" action="@Url.Action("DeleteComment", "Post")">
+                    <input type="hidden" name="commentID" value="@comment.CommentID" />
+                    <input type="hidden" name="postID" value="@comment.PostID" />
+                    <button type="submit" class="delete"><i class="fa-regular fa-trash-can"></i></button>
+                </form>
+            }
+            <p class="comment-content">@Html.Raw(comment.Content)</p>
+        </div>
+    }
+}
+

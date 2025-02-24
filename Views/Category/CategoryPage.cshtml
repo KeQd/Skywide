@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="~/css/categories_pages.css" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="~/js/infinite-scroll.js" defer></script>
+	<script src="~/js/infinite-scroll-cat.js" defer></script>
 </head>
 <body>
 	<div class="whole-page">
@@ -25,13 +25,25 @@
 			</div>
 			<div class="toolbar-right">
 				<a class="user-profile" href="~/Account/Account">@Model.Username</a>
+				<form class="logout" method="post" asp-controller="Account" asp-action="Logout">
+					<button type="submit" class="logout-button" title="Logout">
+						<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					</button>
+				</form>
 			</div>
 		</div>
 		<div class="page-main">
 			<div class="filler"></div>
 			<div class="wall">
 				<div class="posts-wall">
+					<div class="subscribe">
+						<partial name="_Subs" model="new Skywide.Views.Shared.SubsViewModel(Model.Category.CategoryID, Model.IsSubscribed)" />
+					</div>
 					<partial name="_PostsPartial" model="Model.Posts"/>
+				</div>
+				<div class="category-info">
+					<h2>@Model.Category.Name</h2>
+					<p class="category-description">@Model.Category.Description</p>
 				</div>
 			</div>
 			<div class="filler"></div>
