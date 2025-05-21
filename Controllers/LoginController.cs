@@ -28,13 +28,13 @@ namespace Skywide.Controllers
         [HttpPost]
         public async Task<IActionResult> LoginIntoHome(LoginViewModel model)
         {
-            // Walidacja nazwy użytkownika
+            // Walidacja nazwy uzytkownika
             if (string.IsNullOrEmpty(model.Username))
             {
                 ModelState.AddModelError("Username", "Username is required.");
             }
 
-            // Walidacja hasła
+            // Walidacja hasla
             if (string.IsNullOrEmpty(model.Password))
             {
                 ModelState.AddModelError("Password", "Password is required.");
@@ -55,7 +55,7 @@ namespace Skywide.Controllers
                 return View("Login", model);
             }
 
-			// Zapisz dane użytkownika w ciasteczku
+			// Zapisanie danych w sesji
 			HttpContext.Session.SetString("Username", existingUser.Username);
 			HttpContext.Session.SetInt32("UserID", existingUser.UserID);
 

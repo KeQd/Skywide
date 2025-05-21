@@ -48,7 +48,7 @@ namespace Skywide.Controllers
                 return RedirectToAction("Login", "Login");
             }
 
-            //Walidacja pól
+            //Walidacja pol
             if (string.IsNullOrEmpty(model.Name)) ModelState.AddModelError("NameError", "Name for new category is required.");
             else if(_context.Categories.Any(c => c.Name == model.Name)) ModelState.AddModelError("NameError", "A category with this name already exists..");
 

@@ -69,7 +69,7 @@ namespace Skywide.Controllers
                 return RedirectToAction("Login", "Login");
             }
 
-            //Walidacja pól
+            //Walidacja pol
             if (string.IsNullOrEmpty(model.CategoryName))
             {
                 ModelState.AddModelError("CategoryError", "Category is required.");
@@ -123,5 +123,4 @@ namespace Skywide.Controllers
             return RedirectToAction("Index", "Index");
         }
     }
-
 }

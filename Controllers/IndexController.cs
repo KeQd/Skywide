@@ -32,8 +32,8 @@ namespace Skywide.Controllers
 
 			int pageSize = 10;
 			var postsQuery = _context.Posts
-				.Include(p => p.Category) // Załadowanie kategorii
-				.Include(p => p.Owner) // Załadowanie właściciela posta
+				.Include(p => p.Category) // Zaladowanie kategorii
+				.Include(p => p.Owner) // Zaladowanie wlasciciela posta
 				.Where(p => userSubscriptions.Contains(p.CategoryID));
 
 			var posts = await postsQuery
@@ -47,7 +47,7 @@ namespace Skywide.Controllers
 					p.Content.Substring(0, Math.Min(p.Content.Length, 200)) + (p.Content.Length > 200 ? "..." : ""),
 					p.Category.Name,
 					p.Slug,
-					p.Owner, // Przypisanie właściciela posta
+					p.Owner, // Przypisanie wlasciciela posta
 					user,
 					p.Category
 				))
@@ -130,7 +130,5 @@ namespace Skywide.Controllers
 
 			return RedirectToAction("Index");
 		}
-
-
 	}
 }

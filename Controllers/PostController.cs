@@ -46,7 +46,7 @@ namespace Skywide.Controllers
 				.FirstOrDefaultAsync();
 			if (post == null)
 			{
-				return NotFound(); // Jeśli post nie istnieje, zwróć 404
+				return NotFound(); // Jesli post nie istnieje, zwroc 404
 			}
 
 			ViewData["PostOwnerID"] = post.UserID;
@@ -116,14 +116,10 @@ namespace Skywide.Controllers
 				return NotFound();
 			}
 
-			// Usuwanie komentarza
 			_context.Comments.Remove(comment);
 			await _context.SaveChangesAsync();
 
 			return RedirectToAction("PostPage", new { slug = post.Slug });
 		}
-
-
-
 	}
 }

@@ -15,8 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 	.AddCookie(options =>
 	{
-		options.LoginPath = "/Login"; // Œcie¿ka do logowania
-		options.AccessDeniedPath = "/AccessDenied"; // Œcie¿ka dostêpu, jeœli u¿ytkownik nie ma uprawnieñ
+		options.LoginPath = "/Login"; // Scie¿ka do logowania
 	});
 
 // Us³ugi MVC
@@ -36,7 +35,7 @@ var app = builder.Build();
 app.UseSession();
 app.UseRouting();
 
-// Sprawdzenie œrodowiska
+// Sprawdzenie srodowiska
 if (app.Environment.IsDevelopment())
 {
 	app.UseDeveloperExceptionPage();

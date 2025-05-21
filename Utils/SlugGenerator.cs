@@ -12,16 +12,16 @@ namespace Skywide.Utils
             if (string.IsNullOrWhiteSpace(name))
                 return string.Empty;
 
-            // Zamiana na małe litery
+            // Zamiana na male litery
             string slug = name.ToLowerInvariant();
 
-            // Usunięcie znaków diakrytycznych (np. ąćęłńóś -> acelnos)
+            // Usuniecie znakow diakrytycznych
             slug = RemoveDiacritics(slug);
 
-            // Zamiana wszystkich znaków nienumerycznych i nieliterowych na spację
+            // Zamiana wszystkich znakow nienumerycznych i nieliterowych na spację
             slug = Regex.Replace(slug, @"[^a-z0-9\s-]", "");
 
-            // Zamiana wielokrotnych spacji i myślników na pojedynczy myślnik
+            // Zamiana wielokrotnych spacji i myslnikow na pojedynczy myslnik
             slug = Regex.Replace(slug, @"\s+", "-").Trim('-');
 
             return slug;
@@ -46,7 +46,3 @@ namespace Skywide.Utils
 
     }
 }
-
-//string categoryName = "Kuchnia Świata";
-//string slug = SlugGenerator.GenerateSlug(categoryName);
-//Console.WriteLine(slug);

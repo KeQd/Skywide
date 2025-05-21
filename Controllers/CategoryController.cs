@@ -39,7 +39,7 @@ namespace Skywide.Controllers
 
 			bool isSubscribed = await _context.Subscriptions.AnyAsync(s => s.UserID == userID && s.CategoryID == category.CategoryID);
 
-			// Pobieranie postów związanych z tą kategorią, z paginacją
+			// Pobieranie postow związanych z tą kategoria, z paginacja
 			int pageSize = 10;
 			var posts = await _context.Posts
 			.Where(p => p.CategoryID == category.CategoryID)
@@ -50,7 +50,7 @@ namespace Skywide.Controllers
 
 			
 
-			// Pobieramy autorów na podstawie UserID z postów
+			// Pobieranie autorow na podstawie UserID z postow
 			var postViewModels = new List<PostViewModel>();
 
 			foreach (var post in posts)
@@ -83,8 +83,8 @@ namespace Skywide.Controllers
 			}
 
 			var model = new CategoryPageViewModel(user.Username, category, isSubscribed, postViewModels);
-			return View(model);
 
+			return View(model);
 		}
 
 		[HttpPost]
@@ -145,7 +145,5 @@ namespace Skywide.Controllers
 
 			return RedirectToAction("CategoryPage", new { slug = slug });
 		}
-
-
 	}
 }

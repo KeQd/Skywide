@@ -25,7 +25,7 @@ public class RegisterController : Controller
     public async Task<IActionResult> CreateNewAccount(RegisterViewModel model)
     {
 
-        // Walidacja nazwy użytkownika
+        // Walidacja nazwy uzytkownika
         var existingUsername = await _context.Users
             .FirstOrDefaultAsync(u => u.Username == model.Username);
 
@@ -46,7 +46,6 @@ public class RegisterController : Controller
         }
 
         // Walidacja adresu email
-
         if (string.IsNullOrEmpty(model.Email))
         {
             ModelState.AddModelError("Email", "Email is required.");
@@ -64,8 +63,7 @@ public class RegisterController : Controller
             }
         }
 
-        //Walidacja hasła
-
+        //Walidacja hasla
         string passwordPattern = @"^.{5,}$";
 
         if (string.IsNullOrEmpty(model.Password))
@@ -82,15 +80,12 @@ public class RegisterController : Controller
             return View("Register", model);
         }
 
-
-
         var newUser = new User(
              rights: "user",
              username: model.Username,
              email: model.Email.ToLower(),
              passwordHash: BCrypt.Net.BCrypt.HashPassword(model.Password)
         );
-
 
         _context.Users.Add(newUser);
         await _context.SaveChangesAsync();
